@@ -56,4 +56,8 @@ public class UserController {
             return ResponseEntity.notFound().build();
         }
     }
+
+    public UserController(UserRepository userRepository1){
+        this.userRepository=userRepository1;
+    }
 }
